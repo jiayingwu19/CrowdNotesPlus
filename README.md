@@ -8,9 +8,6 @@ Jiaying Wu*, Zihang Fu*, Haonan Wang, Fanxiao Li, Jiafeng Guo, Preslav Nakov, Mi
 
 Community Notes, the crowd-sourced misinformation governance system on X (formerly Twitter), allows users to flag misleading posts, attach contextual notes, and rate the notes' helpfulness. However, our empirical analysis of 30.8K health-related notes reveals substantial latency, with a median delay of 17.6 hours before notes receive a helpfulness status. To improve responsiveness during real-world misinformation surges, we propose CrowdNotes+, a unified LLM-based framework that augments Community Notes for faster and more reliable health misinformation governance. CrowdNotes+ integrates two modes: (1) evidence-grounded note augmentation and (2) utility-guided note automation, supported by a hierarchical three-stage evaluation of relevance, correctness, and helpfulness. We instantiate the framework with HealthNotes, a benchmark of 1.2K health notes annotated for helpfulness, and a fine-tuned helpfulness judge. Our analysis first uncovers a key loophole in current crowd-sourced governance: voters frequently conflate stylistic fluency with factual accuracy. Addressing this via our hierarchical evaluation, experiments across 15 representative LLMs demonstrate that CrowdNotes+ significantly outperforms human contributors in note correctness, helpfulness, and evidence utility.
 
-This repository provides data and code for **CrowdNotes+** — a unified pipeline for **LLM-augmented governance of health misinformation** via Community Notes.  
-It includes a preview of our **HealthNotes** dataset and example scripts for **Utility-Guided Note Automation** and evaluation.
-
 ---
 
 ## Data: the HealthNotes benchmark
